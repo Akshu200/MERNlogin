@@ -24,11 +24,12 @@ const middleware =(req , resp, next)=>{
 // });
 
 app.get('/about',middleware,(req ,resp )=>{
-    console.log('this is middle inside /about')
+   // console.log('this is middle inside /about')
     resp.send(`Hello akshay, this is about page`)
 });
 
 app.get('/contact',(req ,resp )=>{
+   // resp.cookie('sample', 'test')
     resp.send(`Hello akshay, this is contact page`)
 });
 
